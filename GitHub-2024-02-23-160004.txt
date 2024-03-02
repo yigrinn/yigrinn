@@ -1,0 +1,97 @@
+{"app_name":"GitHub","timestamp":"2024-02-23 16:00:04.00 -0500","app_version":"1.150.0","slice_uuid":"4177d9ff-a304-349d-bf33-5a30c808c87f","adam_id":"1477376905","build_version":"123387055","platform":2,"bundleID":"com.github.stormbreaker.prod","share_with_app_devs":0,"is_first_party":0,"bug_type":"309","os_version":"iPhone OS 16.3.1 (20D67)","roots_installed":0,"name":"GitHub","incident_id":"EB77274C-AB05-4AF2-B671-4417E11A98E8"}
+{
+  "uptime" : 46,
+  "procRole" : "Foreground",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "iPhone15,2",
+  "coalitionID" : 566,
+  "osVersion" : {
+    "isEmbedded" : true,
+    "train" : "iPhone OS 16.3.1",
+    "releaseType" : "User",
+    "build" : "20D67"
+  },
+  "captureTime" : "2024-02-23 16:00:01.6775 -0500",
+  "incident" : "EB77274C-AB05-4AF2-B671-4417E11A98E8",
+  "pid" : 375,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "procLaunch" : "2024-02-23 16:00:00.7088 -0500",
+  "procStartAbsTime" : 1090178777,
+  "procExitAbsTime" : 1113425147,
+  "procName" : "GitHub",
+  "procPath" : "\/private\/var\/containers\/Bundle\/Application\/B7A106D3-933A-4B61-A4F8-9BE61C7B8728\/GitHub.app\/GitHub",
+  "bundleInfo" : {"CFBundleShortVersionString":"1.150.0","CFBundleVersion":"123387055","CFBundleIdentifier":"com.github.stormbreaker.prod","DTAppStoreToolsBuild":"15C5500a"},
+  "storeInfo" : {"storeCohortMetadata":"10|date=1708720200000&sf=143441&rapp=com.apple.mobilesafari&happ=com.apple.mobilesafari&pgtp=Software&pgid=1477376905&prpg=Software_1477376905&ctxt=Sheet&lngid=1","itemID":"1477376905","deviceIdentifierForVendor":"C2EFDC4B-441D-4AC9-AF3C-92716C0855EF","softwareVersionExternalIdentifier":"863774808","thirdParty":true,"applicationVariant":"1:iPhone15,2:16"},
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "com.github.stormbreaker.prod",
+  "crashReporterKey" : "9cafa562836b6ce94ed894e769283eb0c926a9ba",
+  "wasUnlockedSinceBoot" : 1,
+  "isLocked" : 0,
+  "throttleTimeout" : 2147483647,
+  "basebandVersion" : "1.41.02",
+  "vmRegionInfo" : "0x16adfb700 is in 0x16adf8000-0x16adfc000;  bytes after start: 14080  bytes before end: 2303\n      REGION TYPE                 START - END      [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      __LINKEDIT               115528000-115648000 [ 1152K] r--\/rw- SM=COW  ...amework\/Runic\n      GAP OF 0x557b0000 BYTES\n--->  STACK GUARD              16adf8000-16adfc000 [   16K] ---\/rwx SM=NUL  ... for thread 0\n      Stack                    16adfc000-16aef8000 [ 1008K] rw-\/rwx SM=PRV  thread 0",
+  "exception" : {"codes":"0x0000000000000002, 0x000000016adfb700","rawCodes":[2,6088013568],"type":"EXC_BAD_ACCESS","signal":"SIGSEGV","subtype":"KERN_PROTECTION_FAILURE at 0x000000016adfb700"},
+  "termination" : {"flags":0,"code":11,"namespace":"SIGNAL","indicator":"Segmentation fault: 11","byProc":"exc handler","byPid":375},
+  "ktriageinfo" : "VM - pmap_enter retried due to resource shortage\nVM - pmap_enter retried due to resource shortage\nVM - pmap_enter retried due to resource shortage\nVM - pmap_enter retried due to resource shortage\nVM - pmap_enter retried due to resource shortage\n",
+  "vmregioninfo" : "0x16adfb700 is in 0x16adf8000-0x16adfc000;  bytes after start: 14080  bytes before end: 2303\n      REGION TYPE                 START - END      [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      __LINKEDIT               115528000-115648000 [ 1152K] r--\/rw- SM=COW  ...amework\/Runic\n      GAP OF 0x557b0000 BYTES\n--->  STACK GUARD              16adf8000-16adfc000 [   16K] ---\/rwx SM=NUL  ... for thread 0\n      Stack                    16adfc000-16aef8000 [ 1008K] rw-\/rwx SM=PRV  thread 0",
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":5646,"threadState":{"x":[{"value":4391312464},{"value":1015416},{"value":4535517184},{"value":6},{"value":16384},{"value":0},{"value":6089025880},{"value":6089027760},{"value":1015424},{"value":7800},{"value":6088013568},{"value":1},{"value":0},{"value":21512192},{"value":21501824},{"value":2},{"value":8077481576,"symbolLocation":0,"symbol":"___chkstk_darwin"},{"value":7701436843869284104},{"value":0},{"value":4391312464},{"value":384},{"value":8},{"value":6089025760},{"value":126874},{"value":424},{"value":6089027760},{"value":4535517184},{"value":6},{"value":16384}],"flavor":"ARM_THREAD_STATE64","lr":{"value":8077192928},"cpsr":{"value":536875008},"fp":{"value":6089025408},"sp":{"value":6089025280},"esr":{"value":2449473543,"description":"(Data Abort) byte read Translation fault"},"pc":{"value":8077481548,"matchesCrashFrame":1},"far":{"value":6088013568}},"frames":[{"imageOffset":452172,"symbol":"__chkstk_darwin_probe","symbolLocation":16,"imageIndex":0},{"imageOffset":163552,"symbol":"dyld4::setUpPageInLinkingRegions(dyld4::RuntimeState&, dyld4::Loader const*, unsigned long, unsigned short, unsigned short, bool, dyld3::Array<dyld4::PageInLinkingRange> const&, dyld3::Array<void const*> const&)","symbolLocation":200,"imageIndex":0},{"imageOffset":162588,"symbol":"invocation function for block in dyld4::Loader::setUpPageInLinking(Diagnostics&, dyld4::RuntimeState&, unsigned long, unsigned long long, dyld3::Array<void const*> const&) const","symbolLocation":264,"imageIndex":0},{"imageOffset":162052,"symbol":"dyld4::Loader::setUpPageInLinking(Diagnostics&, dyld4::RuntimeState&, unsigned long, unsigned long long, dyld3::Array<void const*> const&) const","symbolLocation":536,"imageIndex":0},{"imageOffset":164400,"symbol":"dyld4::Loader::applyFixupsGeneric(Diagnostics&, dyld4::RuntimeState&, unsigned long long, dyld3::Array<void const*> const&, dyld3::Array<void const*> const&, bool, dyld3::Array<dyld4::Loader::MissingFlatLazySymbol> const&) const","symbolLocation":152,"imageIndex":0},{"imageOffset":71300,"symbol":"dyld4::JustInTimeLoader::applyFixups(Diagnostics&, dyld4::RuntimeState&, dyld4::DyldCacheDataConstLazyScopedWriter&, bool) const","symbolLocation":672,"imageIndex":0},{"imageOffset":94572,"symbol":"dyld4::prepare(dyld4::APIs&, dyld3::MachOAnalyzer const*)","symbolLocation":2108,"imageIndex":0},{"imageOffset":88276,"symbol":"start","symbolLocation":2388,"imageIndex":0}]}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 8077029376,
+    "size" : 536724,
+    "uuid" : "4b042f28-0d14-30ec-a1de-3dbb10866ad7",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  }
+],
+  "sharedCache" : {
+  "base" : 7447232512,
+  "size" : 2950873088,
+  "uuid" : "c617a1ab-01c8-39d4-93ed-014e0fd16eb7"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=1.1G resident=0K(0%) swapped_out_or_unallocated=1.1G(100%)\nWritable regions: Total=17.1M written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=17.1M(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nSTACK GUARD                         16K        1 \nStack                             1008K        1 \n__AUTH                            3537K      449 \n__AUTH_CONST                      28.0M      700 \n__CTF                               756        1 \n__DATA                            36.0M      781 \n__DATA_CONST                      40.7M      771 \n__DATA_DIRTY                      3571K      594 \n__FONT_DATA                        2352        1 \n__LINKEDIT                       354.5M       71 \n__OBJC_CONST                      6679K      474 \n__OBJC_RO                         78.9M        1 \n__OBJC_RW                         2440K        1 \n__TEXT                           803.6M      787 \ndyld private memory               1536K        3 \n===========                     =======  ======= \nTOTAL                              1.3G     4636 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+
+  }
+},
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "60186475825c62000ccf5450",
+      "factorPackIds" : {
+        "SIRI_VALUE_INFERENCE_CONTACT_RESOLUTION" : "647a32f3e2b2877acce2cf10"
+      },
+      "deploymentId" : 240000069
+    },
+    {
+      "rolloutId" : "610d52e1fc54bc3389840408",
+      "factorPackIds" : {
+        "SIRI_UNDERSTANDING_ATTENTION_ASSETS" : "6336344ca33d3500e4e7e2bf",
+        "SIRI_UNDERSTANDING_ASR_ASSISTANT" : "6489075a6da52c5116eebf07",
+        "SIRI_UNDERSTANDING_NL" : "6373e6f90509d9519e750bf1",
+        "SIRI_EXPERIENCE_CAM" : "636bbe25bce21e387fd2062b",
+        "SIRI_UNDERSTANDING_MORPHUN" : "62ec7220c682040ba94e6a20"
+      },
+      "deploymentId" : 240000719
+    }
+  ],
+  "experiments" : [
+
+  ]
+}
+}
